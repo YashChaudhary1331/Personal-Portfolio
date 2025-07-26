@@ -1,0 +1,84 @@
+/* Custom Styles for the "Inferno Red" theme */
+body {
+    background-color: #111111; /* Dark Gray */
+    color: #EAEAEA;
+    font-family: 'Poppins', sans-serif;
+}
+
+.font-rajdhani {
+    font-family: 'Rajdhani', sans-serif;
+}
+
+/* Glassmorphism effect with new theme */
+.glass-card {
+    background: rgba(25, 25, 25, 0.6);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 0, 0, 0.1);
+}
+
+/* Animated gradient border */
+/* .gradient-border {
+    position: relative;
+    background-clip: padding-box;
+    border: solid 2px transparent;
+} */
+
+/* .gradient-border:before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -1;
+    margin: -2px;
+    border-radius: inherit;
+    background: linear-gradient(to right, #ff0000, #ff4d4d, #ff0000); Red to Light Red gradient
+    background-size: 200% 200%;
+    animation: gradient-animation 4s ease infinite;
+} */
+
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #111111;
+}
+::-webkit-scrollbar-thumb {
+    background: #ff0000; /* Red */
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #ff4d4d; /* Light Red */
+}
+
+/* Typing cursor effect */
+.typing-cursor {
+    display: inline-block;
+    width: 3px;
+    height: 1.1em;
+    background-color: #ff0000; /* Red cursor */
+    animation: blink 0.7s infinite;
+    margin-left: 5px;
+    vertical-align: bottom;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* Background particles */
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
