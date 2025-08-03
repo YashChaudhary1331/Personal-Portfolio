@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Chaudhary - Full-Stack Developer</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="overflow-x-hidden">
+
+    <div id="particles-js"></div>
+
+    <header class="fixed top-0 left-0 right-0 z-50 glass-card" id="navbar">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-rajdhani font-bold text-white">YC</a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#about" class="text-gray-300 hover:text-[#ff0000] transition duration-300">About</a>
+                <a href="#skills" class="text-gray-300 hover:text-[#ff0000] transition duration-300">Skills</a>
+                <a href="#tools" class="text-gray-300 hover:text-[#ff0000] transition duration-300">Tools</a>
+                <a href="#projects" class="text-gray-300 hover:text-[#ff0000] transition duration-300">Projects</a>
+                <a href="#resume" class="text-gray-300 hover:text-[#ff0000] transition duration-300">Resume</a>
+                <a href="#contact" class="text-gray-300 hover:text-[#ff0000] transition duration-300">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden glass-card mx-4 rounded-lg">
+            <a href="#about" class="block text-white text-center py-2 px-4 hover:bg-red-500/20">About</a>
+            <a href="#skills" class="block text-white text-center py-2 px-4 hover:bg-red-500/20">Skills</a>
+            <a href="#tools" class="block text-white text-center py-2 px-4 hover:bg-red-500/20">Tools</a>
+            <a href="#projects" class="block text-white text-center py-2 px-4 hover:bg-red-500/20">Projects</a>
+            <a href="#resume" class="block text-white text-center py-2 px-4 hover:bg-red-500/20">Resume</a>
+            <a href="#contact" class="block text-white text-center py-2 px-4 hover:bg-red-500/20">Contact</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6">
+
+        <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center md:text-left pt-20">
+            <div data-aos="fade-up" class="max-w-4xl w-full">
+                <h1 class="text-5xl md:text-7xl font-rajdhani font-bold text-white mb-4">
+                    <span id="name-text"></span><span class="typing-cursor"></span>
+                </h1>
+                <p class="text-xl md:text-3xl text-red-500 mb-8">
+                    I'm a <b id="title-text" class="font-semibold"></b>
+                </p>
+                
+                <div id="tagline-section" >
+                    <p class="text-xl md:text-2xl text-gray-300 mt-6">
+                        "Website creation is no longer just plain old text on your screen" 💻
+                    </p>
+                    <p class="text-xl md:text-2xl text-red-400 mt-4 mb-8 font-semibold">
+                        Let's connect and bring your vision to life!
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center md:justify-start items-center gap-6 mt-8">
+                        <a href="#contact" class="inline-block w-full sm:w-auto bg-[#ff0000] text-white font-bold py-3 px-8 rounded-lg hover:bg-red-600 transition-transform transform hover:scale-105 shadow-lg shadow-red-500/20">
+                            Contact Me
+                        </a>
+                        <a href="#resume" class="inline-block w-full sm:w-auto bg-transparent border-2 border-[#ff0000] text-[#ff0000] font-bold py-3 px-8 rounded-lg hover:bg-red-500/10 transition-transform transform hover:scale-105">
+                            View Resume
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-20 min-h-screen flex items-center">
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-12 items-center">
+                <div class="md:col-span-2" data-aos="fade-right">
+                    <div class="p-1 rounded-lg gradient-border w-64 h-64 md:w-80 md:h-80 mx-auto">
+                        <img src="profile.jpg" alt="Yash Chaudhary" class="rounded-lg w-full h-full object-cover">
+                    </div>
+                </div>
+                <div class="md:col-span-3" data-aos="fade-left">
+                    <h2 class="text-4xl font-rajdhani font-bold mb-6 text-white">About Me</h2>
+                    <p class="text-lg text-gray-300 mb-4 leading-relaxed">
+                        Hello! I'm Yash, a passionate and results-driven Full-Stack Developer with expertise in the MERN stack (MongoDB, Express.js, React, Node.js) and Next JS. I specialize in building robust, scalable, and efficient web applications from scratch.
+                    </p>
+                    <p class="text-lg text-gray-300 mb-6 leading-relaxed">
+                        My journey in web development started with a deep curiosity for how things work on the internet, which quickly grew into a career. I thrive on solving complex problems and am constantly learning new technologies to push the boundaries of what's possible.
+                    </p>
+                    <a href="#contact" class="inline-block bg-[#ff0000] text-white font-bold py-3 px-6 rounded-lg hover:bg-red-600 transition-transform transform hover:scale-105 shadow-lg shadow-red-500/20">
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="py-20">
+            <h2 class="text-4xl font-rajdhani font-bold text-center mb-12 text-white" data-aos="fade-down">My Tech Arsenal</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
+                <div class="flex flex-col items-center p-6 glass-card rounded-lg" data-aos="fade-up">
+                    <img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg" alt="MongoDB" class="h-16 w-16 mb-4">
+                    <h3 class="text-xl font-semibold text-white">MongoDB</h3>
+                </div>
+                <div class="flex flex-col items-center p-6 glass-card rounded-lg" data-aos="fade-up" data-aos-delay="50">
+                    <img src="https://cdn.worldvectorlogo.com/logos/express-109.svg" alt="ExpressJS" class="h-16 w-16 mb-4" style="filter: invert(1);">
+                    <h3 class="text-xl font-semibold text-white">Express.js</h3>
+                </div>
+                <div class="flex flex-col items-center p-6 glass-card rounded-lg" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg" alt="React" class="h-16 w-16 mb-4">
+                    <h3 class="text-xl font-semibold text-white">React</h3>
+                </div>
+                <div class="flex flex-col items-center p-6 glass-card rounded-lg" data-aos="fade-up" data-aos-delay="150">
+                    <img src="https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg" alt="NodeJS" class="h-16 w-16 mb-4">
+                    <h3 class="text-xl font-semibold text-white">Node.js</h3>
+                </div>
+                <div class="flex flex-col items-center p-6 glass-card rounded-lg" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg" alt="JavaScript" class="h-16 w-16 mb-4">
+                    <h3 class="text-xl font-semibold text-white">JavaScript</h3>
+                </div>
+                <div class="flex flex-col items-center p-6 glass-card rounded-lg" data-aos="fade-up" data-aos-delay="250">
+                    <img src="https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg" alt="TypeScript" class="h-16 w-16 mb-4">
+                    <h3 class="text-xl font-semibold text-white">TypeScript</h3>
+                </div>
+                 <div class="flex flex-col items-center p-6 glass-card rounded-lg" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="Tailwind CSS" class="h-16 w-16 mb-4">
+                    <h3 class="text-xl font-semibold text-white">Tailwind CSS</h3>
+                </div>
+                 <div class="flex flex-col items-center p-6 glass-card rounded-lg" data-aos="fade-up" data-aos-delay="350">
+                    <img src="https://www.vectorlogo.zone/logos/java/java-icon.svg" alt="Java" class="h-16 w-16 mb-4">
+                    <h3 class="text-xl font-semibold text-white">Java</h3>
+                </div>
+                 <div class="flex flex-col items-center p-6 glass-card rounded-lg" data-aos="fade-up" data-aos-delay="400">
+                    <img src="https://www.vectorlogo.zone/logos/nextjs/nextjs-icon.svg" alt="Next.js" class="h-16 w-16 mb-4" style="filter: invert(1);">
+                    <h3 class="text-xl font-semibold text-white">Next.js</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="tools" class="py-20">
+            <h2 class="text-4xl font-rajdhani font-bold text-center mb-12 text-white" data-aos="fade-down">Tools & Platforms</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
+                <div class="flex flex-col items-center p-6 glass-card rounded-lg" data-aos="fade-up">
+                    <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="Git" class="h-16 w-16 mb-4">
+                    <h3 class="text-xl font-semibold text-white">Git</h3>
+                </div>
+                <div class="flex flex-col items-center p-6 glass-card rounded-lg" data-aos="fade-up" data-aos-delay="50">
+                    <img src="https://www.vectorlogo.zone/logos/github/github-icon.svg" alt="GitHub" class="h-16 w-16 mb-4">
+                    <h3 class="text-xl font-semibold text-white">GitHub</h3>
+                </div>
+                <div class="flex flex-col items-center p-6 glass-card rounded-lg" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://www.vectorlogo.zone/logos/vercel/vercel-icon.svg" alt="Vercel" class="h-16 w-16 mb-4" style="filter: invert(1);">
+                    <h3 class="text-xl font-semibold text-white">Vercel</h3>
+                </div>
+                <div class="flex flex-col items-center p-6 glass-card rounded-lg" data-aos="fade-up" data-aos-delay="150">
+                    <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="Figma" class="h-16 w-16 mb-4">
+                    <h3 class="text-xl font-semibold text-white">Figma</h3>
+                </div>
+                <div class="flex flex-col items-center p-6 glass-card rounded-lg" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://www.vectorlogo.zone/logos/linux/linux-icon.svg" alt="Linux" class="h-16 w-16 mb-4">
+                    <h3 class="text-xl font-semibold text-white">Linux</h3>
+                </div>
+                <div class="flex flex-col items-center p-6 glass-card rounded-lg" data-aos="fade-up" data-aos-delay="250">
+                    <img src="https://img.icons8.com/?size=100&id=6kZdxe7t8OL1&format=png&color=000000" alt="MS Office" class="h-16 w-16 mb-4">
+                    <h3 class="text-xl font-semibold text-white">MS Office</h3>
+                </div>
+                <div class="flex flex-col items-center p-6 glass-card rounded-lg" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://img.icons8.com/?size=100&id=117557&format=png&color=000000" alt="MS PowerPoint" class="h-16 w-16 mb-4">
+                    <h3 class="text-xl font-semibold text-white">PowerPoint</h3>
+                </div>
+                <div class="flex flex-col items-center p-6 glass-card rounded-lg" data-aos="fade-up" data-aos-delay="350">
+                    <img src="https://img.icons8.com/?size=100&id=13677&format=png&color=000000" alt="Adobe Photoshop" class="h-16 w-16 mb-4">
+                    <h3 class="text-xl font-semibold text-white">Photoshop</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-20 min-h-screen">
+            <h2 class="text-4xl font-rajdhani font-bold text-center mb-12 text-white" data-aos="fade-down">Featured Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                  <div class="glass-card rounded-lg overflow-hidden group" data-aos="zoom-in-up" data-aos-delay="100">
+                    <img src="urbanbloom.png" alt="Project 2" class="w-full h-48 object-contain group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-white mb-2">Real-time Chat App</h3>
+                        <p class="text-gray-400 mb-4">A web-based chat application using WebSockets for instant messaging between users.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-red-500/20 text-red-300 text-sm font-medium px-2.5 py-0.5 rounded">Socket.IO</span>
+                            <span class="bg-red-500/20 text-red-300 text-sm font-medium px-2.5 py-0.5 rounded">Express</span>
+                            <span class="bg-red-500/20 text-red-300 text-sm font-medium px-2.5 py-0.5 rounded">React</span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="https://urban-bloom-flame.vercel.app/" class="text-red-400 hover:text-white transition duration-300">Live Demo</a>
+                            <a href="https://github.com/YashChaudhary1331/Urban-Bloom" class="text-red-400 hover:text-white transition duration-300">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="glass-card rounded-lg overflow-hidden group" data-aos="zoom-in-up">
+                    <img src="portfolio.png" alt="Personal Portfolio" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-white mb-2">Portfolio</h3>
+                        <p class="text-gray-400 mb-4">A responsive personal portfolio website built to showcase my skills, projects, and experience as a Full-Stack Developer.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-red-500/20 text-red-300 text-sm font-medium px-2.5 py-0.5 rounded">Tailwind CSS</span>
+                            <span class="bg-red-500/20 text-red-300 text-sm font-medium px-2.5 py-0.5 rounded">JavaScript</span>
+                            <span class="bg-red-500/20 text-red-300 text-sm font-medium px-2.5 py-0.5 rounded">AOS</span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="https://yashchaudhary-portfolio.vercel.app/" class="text-red-400 hover:text-white transition duration-300" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                            <a href="https://github.com/YashChaudhary1331/Personal-Portfolio.git" class="text-red-400 hover:text-white transition duration-300" target="_blank" rel="noopener noreferrer">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-lg overflow-hidden group" data-aos="zoom-in-up" data-aos-delay="200">
+                    <img src="https://placehold.co/600x400/111111/EAEAEA?text=Project+Three" alt="Project 3" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-white mb-2">Task Management API</h3>
+                        <p class="text-gray-400 mb-4">A RESTful API for a task manager with JWT authentication and CRUD operations for tasks.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-500/20 text-gray-300 text-sm font-medium px-2.5 py-0.5 rounded">Node.js</span>
+                            <span class="bg-gray-500/20 text-gray-300 text-sm font-medium px-2.5 py-0.5 rounded">JWT</span>
+                            <span class="bg-gray-500/20 text-gray-300 text-sm font-medium px-2.5 py-0.5 rounded">PostgreSQL</span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-gray-400 hover:text-white transition duration-300">API Docs</a>
+                            <a href="#" class="text-gray-400 hover:text-white transition duration-300">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="resume" class="py-20 min-h-screen flex flex-col justify-center items-center text-center">
+            <div class="w-full max-w-4xl" data-aos="fade-up">
+                <h2 class="text-4xl font-rajdhani font-bold text-center mb-4 text-white">My Resume</h2>
+                <p class="text-lg text-center text-gray-400 mb-12 max-w-2xl mx-auto">
+                    Interested in a more detailed look at my experience and skills? Download my full resume to learn more about my qualifications.
+                </p>
+                <a href="Yash Chaudhary (1).pdf" target="_blank" download="Yash_Chaudhary_Resume.pdf" class="inline-block bg-[#ff0000] text-white font-bold py-4 px-8 rounded-lg text-xl hover:bg-red-600 transition-transform transform hover:scale-105 shadow-lg shadow-red-500/20">
+                    Download Resume
+                </a>
+            </div>
+        </section>
+
+
+        <section id="contact" class="py-20 min-h-screen flex flex-col justify-center items-center">
+            <h2 class="text-4xl font-rajdhani font-bold text-center mb-4 text-white" data-aos="fade-down">Let's Build Together</h2>
+            <p class="text-lg text-center text-gray-400 mb-12 max-w-2xl" data-aos="fade-down" data-aos-delay="100">
+                Have a project in mind or just want to connect? Feel free to send me a message. I'm always open to discussing new ideas and opportunities.
+            </p>
+            <div class="w-full max-w-2xl glass-card rounded-lg p-8" data-aos="fade-up">
+                 <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID_HERE" method="POST">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <input type="text" name="name" placeholder="Your Name" class="bg-gray-900/50 border border-gray-700 rounded-lg py-3 px-4 text-white focus:outline-none focus:ring-2 focus:ring-red-400 transition" required>
+                        <input type="email" name="email" placeholder="Your Email" class="bg-gray-900/50 border border-gray-700 rounded-lg py-3 px-4 text-white focus:outline-none focus:ring-2 focus:ring-red-400 transition" required>
+                    </div>
+                    <textarea name="message" placeholder="Your Message" rows="5" class="w-full bg-gray-900/50 border border-gray-700 rounded-lg py-3 px-4 text-white focus:outline-none focus:ring-2 focus:ring-red-400 transition mb-6" required></textarea>
+                    <button type="submit" class="w-full bg-[#ff0000] text-white font-bold py-3 px-6 rounded-lg hover:bg-red-600 transition-transform transform hover:scale-105 shadow-lg shadow-red-500/20">
+                        Send Message
+                    </button>
+                </form>
+                <div id="form-status" class="text-center mt-4"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="py-8 border-t border-gray-800">
+        <div class="container mx-auto px-6 text-center text-gray-500">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="https://github.com/YashChaudhary1331" class="hover:text-red-400 transition duration-300" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/yash-chaudhary-b90589279?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" class="hover:text-red-400 transition duration-300">LinkedIn</a>
+                <a href="https://www.instagram.com/chaudhary._yashh?igsh=ZmNvdjN3Z3k0eXhk" class="hover:text-red-400 transition duration-300" target="_blank">Instagram</a>
+            </div>
+            <p>&copy; 2024 Yash Chaudhary. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
